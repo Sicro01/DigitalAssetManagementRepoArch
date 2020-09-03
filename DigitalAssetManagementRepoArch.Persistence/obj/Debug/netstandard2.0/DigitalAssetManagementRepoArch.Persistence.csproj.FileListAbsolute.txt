@@ -1,0 +1,9 @@
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.deps.json
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.dll
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.pdb
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.csprojAssemblyReference.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.AssemblyInfoInputs.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.AssemblyInfo.cs
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.dll
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Persistence\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Persistence.pdb

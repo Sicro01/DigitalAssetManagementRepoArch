@@ -1,0 +1,9 @@
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.deps.json
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.dll
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.pdb
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.csprojAssemblyReference.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.AssemblyInfoInputs.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.AssemblyInfo.cs
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.csproj.CoreCompileInputs.cache
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.dll
+C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Domain\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Domain.pdb
