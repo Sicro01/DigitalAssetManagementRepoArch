@@ -1,17 +1,80 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj": {}
+    "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj": {
+    "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
+        "projectUniqueName": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
         "projectName": "DigitalAssetManagementRepoArch.Application",
-        "projectPath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
+        "projectPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
         "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\obj\\",
+        "outputPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj": {
+                "projectPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj",
+        "projectName": "DigitalAssetManagementRepoArch.Domain",
+        "projectPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj",
+        "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +122,14 @@
         }
       }
     },
-    "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj": {
+    "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj",
+        "projectUniqueName": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj",
         "projectName": "DigitalAssetManagementRepoArch.Infratructure",
-        "projectPath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj",
+        "projectPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\DigitalAssetManagementRepoArch.Infratructure.csproj",
         "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\obj\\",
+        "outputPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Infratructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +145,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj": {
-                "projectPath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj"
+              "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj": {
+                "projectPath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj"
               }
             }
           }

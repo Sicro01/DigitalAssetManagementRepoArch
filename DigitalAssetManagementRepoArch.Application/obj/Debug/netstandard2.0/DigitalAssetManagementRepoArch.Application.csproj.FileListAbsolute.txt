@@ -7,3 +7,11 @@ C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagemen
 C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.csproj.CoreCompileInputs.cache
 C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.dll
 C:\Users\simon\source\repos\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.pdb
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.deps.json
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.dll
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\bin\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.pdb
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.csprojAssemblyReference.cache
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.AssemblyInfoInputs.cache
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.AssemblyInfo.cs
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.dll
+C:\Users\simon\Google Drive\01 - Adcreo\C# Code\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Application\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Application.pdb

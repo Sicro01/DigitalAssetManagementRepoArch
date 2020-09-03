@@ -1,11 +1,35 @@
 {
   "version": 2,
-  "dgSpecHash": "6rsmVSbUUfXfefILjg79nGfCNCzLNwhqWMWvxqUeivON25r2uksiL3yR/8vgH4NeO05f2HtvdaJEVwqspcbC3A==",
+  "dgSpecHash": "1aJ+7JU9v0jSvJG1eKrN8NpMAsD/RmFF8z1upmT15eREdtz+NPFtYFpc3E19DPlUvQBDzlDUle56n/FBeWD8Gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
+  "projectFilePath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Application\\DigitalAssetManagementRepoArch.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.7\\microsoft.entityframeworkcore.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.7\\microsoft.entityframeworkcore.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.7\\microsoft.entityframeworkcore.analyzers.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.7\\microsoft.extensions.caching.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.7\\microsoft.extensions.caching.memory.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.7\\microsoft.extensions.configuration.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.7\\microsoft.extensions.configuration.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.7\\microsoft.extensions.configuration.binder.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.7\\microsoft.extensions.dependencyinjection.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.7\\microsoft.extensions.dependencyinjection.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.logging\\3.1.7\\microsoft.extensions.logging.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.7\\microsoft.extensions.logging.abstractions.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.options\\3.1.7\\microsoft.extensions.options.3.1.7.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.7\\microsoft.extensions.primitives.3.1.7.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\simon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\simon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

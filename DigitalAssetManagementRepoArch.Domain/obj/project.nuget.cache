@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N8cZCCJJpW5wCjg3aUvMeXdRqDRMhz8MNWaLgCEGUy7R5P1qFkVJb2+5ZWWzAlECFnR7xtwlgH/qjDsknPFI2A==",
+  "dgSpecHash": "OLV01LgWbYb+5aF3cSqFbWlg0cLFHsSDF985LozwJhVgIB471UGyypFsMno7R5GP1PVG5h8vJc5yxeUDsedeMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\simon\\source\\repos\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj",
+  "projectFilePath": "C:\\Users\\simon\\Google Drive\\01 - Adcreo\\C# Code\\DigitalAssetManagementRepoArch\\DigitalAssetManagementRepoArch.Domain\\DigitalAssetManagementRepoArch.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
