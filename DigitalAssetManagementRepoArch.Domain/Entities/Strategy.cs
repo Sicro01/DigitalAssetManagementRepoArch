@@ -9,6 +9,6 @@ namespace DigitalAssetManagementRepoArch.Domain.Entities
         public string Name { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public virtual IList<PhaseStrategy> PhasesStrategies { get; private set; } = new List<PhaseStrategy>();
+        public virtual IList<PhaseStrategy> PhaseStrategyList { get; private set; } = new List<PhaseStrategy>();
     }
 }

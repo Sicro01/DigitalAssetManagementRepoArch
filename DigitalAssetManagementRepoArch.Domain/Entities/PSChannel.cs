@@ -11,6 +11,6 @@ namespace DigitalAssetManagementRepoArch.Domain.Entities
         public int PhaseStrategyId { get; set; }
         public Channel Channel { get; set; }
         public PhaseStrategy PhaseStrategy { get; set; }
-        public IList<PSChannelCountry> PSChannelCountries { get; private set; } = new List<PSChannelCountry>();
+        public IList<PSChannelCountry> PSChannelCountryList { get; private set; } = new List<PSChannelCountry>();
     }
 }

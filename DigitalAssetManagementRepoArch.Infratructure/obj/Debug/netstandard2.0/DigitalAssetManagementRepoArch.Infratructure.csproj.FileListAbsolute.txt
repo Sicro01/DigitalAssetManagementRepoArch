@@ -1,0 +1,4 @@
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Infratructure\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Infratructure.csprojAssemblyReference.cache
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Infratructure\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Infratructure.AssemblyInfoInputs.cache
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Infratructure\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Infratructure.AssemblyInfo.cs
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.Infratructure\obj\Debug\netstandard2.0\DigitalAssetManagementRepoArch.Infratructure.csproj.CoreCompileInputs.cache

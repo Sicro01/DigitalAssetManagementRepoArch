@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0094D588-D103-4D1B-BDDD-F783CE004973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalAssetManagementRepoArch.Infratructure", "DigitalAssetManagementRepoArch.Infratructure\DigitalAssetManagementRepoArch.Infratructure.csproj", "{FC398D99-5346-4BBA-9A31-FEC6DADABA1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalAssetManagementRepoArch.Infrastructure", "DigitalAssetManagementRepoArch.Infratructure\DigitalAssetManagementRepoArch.Infrastructure.csproj", "{FC398D99-5346-4BBA-9A31-FEC6DADABA1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

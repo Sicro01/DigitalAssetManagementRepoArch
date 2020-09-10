@@ -1,4 +1,6 @@
-﻿using DigitalAssetManagementRepoArch.Domain.Entities;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using DigitalAssetManagementRepoArch.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -15,5 +17,7 @@ namespace DigitalAssetManagementRepoArch.Application.Common.Interfaces
         public DbSet<PSChannel> PSChannels { get; set; }
         public DbSet<PSChannelCountry> PSChannelCountries { get; set; }
         public DbSet<PSChannelCountryAd> PSChannelCountryAds { get; set; }
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

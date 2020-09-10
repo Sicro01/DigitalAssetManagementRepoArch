@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DigitalAssetManagementRepoArch.Domain.Entities
 {
@@ -10,6 +9,6 @@ namespace DigitalAssetManagementRepoArch.Domain.Entities
         public string Name { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public virtual IList<PhaseStrategy> PhaseStrategies { get; private set; } = new List<PhaseStrategy>();
+        public virtual IList<PhaseStrategy> PhaseStrategyList { get; private set; } = new List<PhaseStrategy>();
     }
 }

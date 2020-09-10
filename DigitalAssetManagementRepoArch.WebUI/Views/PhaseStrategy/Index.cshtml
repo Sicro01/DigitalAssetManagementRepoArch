@@ -1,0 +1,145 @@
+﻿@model DigitalAssetManagementRepoArch.Application.PhaseStrategies.Queries.GetPhaseStrategies.GetAllPhaseStrategiesViewModel
+
+@* (1) Phase Heading / Phase Create / Phase Strategies Header Row *@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 px-4 py-2 border-top border-left border-right">
+            <div class="row justify-content-between">
+                <h2>Phases</h2>
+                <a asp-action="CreatePhase" class="btn btn-primary text-white">Create Phase</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="col-12 py-2 border-top border-left border-right">
+                <h2>Phase Strategies</h2>
+            </div>
+        </div>
+    </div>
+    @* (1) Phase Details Header and Data (2) Strategy Heading  / Strategy Create Header Row (3) Strategy Details Header and Data *@
+    <div class="row">
+        <div class="col-4">
+            @* (1) Phase Details Header and Data *@
+            <div class="row border-bottom border-left border-right">
+                <form class="w-100" method="post">
+                    @Html.HiddenFor(m => m.PhaseDtoList.FirstOrDefault().Id)
+                    <div>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="PhaseDtoList.FirstOrDefault().Name"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="PhaseDtoList.FirstOrDefault().StartDate"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="PhaseDtoList.FirstOrDefault().EndDate"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label>Manage</label>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var phase in Model.PhaseDtoList)
+                                {
+                                    <tr>
+                                        <th scope="row" class="font-weight-normal">@Html.DisplayFor(m => phase.Name)</th>
+                                        <td>
+                                            @Html.DisplayFor(m => phase.StartDate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(m => phase.EndDate)
+                                        </td>
+                                        <td class="d-flex justify-content-around">
+                                            <a asp-action="EditPhase" asp-route-id="@phase.Id" class="btn btn-success float-right">Edit</a>
+                                            <a asp-action="DeletePhase" asp-route-id="@phase.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <br />
+            @* (2) Strategy Heading  Details / Strategy Create Header Row *@
+            <div class="row mb-1 justify-content-between px-2 py-2 border-top border-left border-right">
+                <h2>Strategies</h2>
+                <a asp-action="CreateStrategies" class="btn btn-primary text-white">Create Strategy</a>
+            </div>
+            @* (3) Strategy Details Header and Data *@
+            <div class="row border-bottom border-left border-right">
+                <form class="w-100" method="post">
+                    @Html.HiddenFor(m => m.StrategyDtoList.FirstOrDefault().Id)
+                    <div>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="StrategyDtoList.FirstOrDefault().Name"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="StrategyDtoList.FirstOrDefault().StartDate"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label asp-for="StrategyDtoList.FirstOrDefault().EndDate"></label>
+                                    </th>
+                                    <th scope="col" class="text-center">
+                                        <label>Manage</label>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var strategy in Model.StrategyDtoList)
+                                {
+                                    <tr>
+                                        <th scope="row" class="font-weight-normal">@Html.DisplayFor(m => strategy.Name)</th>
+                                        <td>
+                                            @Html.DisplayFor(m => strategy.StartDate)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(m => strategy.EndDate)
+                                        </td>
+                                        <td class="d-flex justify-content-around">
+                                            <a asp-action="EditStrategy" asp-route-id="@strategy.Id" class="btn btn-success float-right">Edit</a>
+                                            <a asp-action="DeleteStrategy" asp-route-id="@strategy.Id" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+        @* (4) Phase Strategy Details *@
+        <div class="col-8">
+            <div class="col-12 p-0 border-bottom border-left border-right">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="text-center">
+                                @Html.LabelFor(m => m.PhaseStrategyDtoList.FirstOrDefault().Phase.Name, "Phase Name")
+                            </th>
+                            <th scope="col" class="text-center">
+                                @Html.LabelFor(m => m.PhaseStrategyDtoList.FirstOrDefault().Strategy.Name, "Strategy Name")
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var phaseStrategy in Model.PhaseStrategyDtoList)
+                        {
+                            <tr>
+                                <th scope="row" class="font-weight-normal">@Html.DisplayFor(m => phaseStrategy.Phase.Name)</th>
+                                <td>
+                                    @Html.DisplayFor(m => phaseStrategy.Strategy.Name)
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
