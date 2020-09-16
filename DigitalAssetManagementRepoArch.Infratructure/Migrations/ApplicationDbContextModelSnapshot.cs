@@ -201,8 +201,8 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnName("Name")
-                        .HasColumnType("nvarchar(30)")
-                        .HasMaxLength(30);
+                        .HasColumnType("nvarchar(15)")
+                        .HasMaxLength(15);
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnName("StartDate")
@@ -249,8 +249,8 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnName("Name")
-                        .HasColumnType("nvarchar(30)")
-                        .HasMaxLength(30);
+                        .HasColumnType("nvarchar(15)")
+                        .HasMaxLength(15);
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnName("StartDate")
@@ -266,7 +266,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.HasOne("DigitalAssetManagementRepoArch.Domain.Entities.Channel", "Channel")
                         .WithMany("PSChannels")
                         .HasForeignKey("ChannelId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("DigitalAssetManagementRepoArch.Domain.Entities.PhaseStrategy", "PhaseStrategy")
@@ -287,7 +287,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.HasOne("DigitalAssetManagementRepoArch.Domain.Entities.PSChannel", "PSChannel")
                         .WithMany("PSChannelCountryList")
                         .HasForeignKey("PSChannelId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
@@ -302,7 +302,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.HasOne("DigitalAssetManagementRepoArch.Domain.Entities.PSChannelCountry", "PSChannelCountry")
                         .WithMany("PSChannelCountryAdList")
                         .HasForeignKey("PSChannelCountryId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
@@ -317,7 +317,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Migrations
                     b.HasOne("DigitalAssetManagementRepoArch.Domain.Entities.Strategy", "Strategy")
                         .WithMany("PhaseStrategyList")
                         .HasForeignKey("StrategyId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

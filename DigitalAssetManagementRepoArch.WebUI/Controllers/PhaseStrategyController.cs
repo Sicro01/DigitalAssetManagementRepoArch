@@ -1,36 +1,34 @@
-﻿using DigitalAssetManagementRepoArch.Application.Common.Interfaces;
-using DigitalAssetManagementRepoArch.Application.Phases.Commands.CreatePhase;
+﻿using DigitalAssetManagementRepoArch.Application.Phases.Commands.CreatePhase;
+using DigitalAssetManagementRepoArch.Application.Phases.Commands.DeletePhase;
+using DigitalAssetManagementRepoArch.Application.Phases.Commands.UpdatePhase;
 using DigitalAssetManagementRepoArch.Application.Phases.Queries.GetPhase;
-using DigitalAssetManagementRepoArch.Application.Strategies.Queries;
+using DigitalAssetManagementRepoArch.Application.PhaseStrategies.Queries.GetPhaseStrategies;
+using DigitalAssetManagementRepoArch.Application.Strategies.Commands.CreateStrategy;
+using DigitalAssetManagementRepoArch.Application.Strategies.Commands.DeleteStrategy;
+using DigitalAssetManagementRepoArch.Application.Strategies.Commands.UpdateStrategy;
+using DigitalAssetManagementRepoArch.Application.Strategies.Queries.GetStrategy;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
 using System.Threading.Tasks;
-using DigitalAssetManagementRepoArch.Application.Phases.Commands.UpdatePhase;
-using DigitalAssetManagementRepoArch.Application.PhaseStrategies.Queries.GetPhaseStrategies;
-using DigitalAssetManagementRepoArch.Application.Strategies.Commands.UpdateStrategy;
-using FluentValidation;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace DigitalAssetManagementRepoArch.WebUI.Controllers
 {
     public class PhaseStrategyController : Controller
     {
-        private readonly IPhaseRepository _phaseRepo;
-        private readonly IStrategyRepository _strategyRepo;
         private readonly IMediator _mediator;
 
-        public PhaseStrategyController(IPhaseRepository phaseRepo, IStrategyRepository strategyRepo, IMediator mediator)
+        public PhaseStrategyController(IMediator mediator)
         {
-            _phaseRepo = phaseRepo;
-            _strategyRepo= strategyRepo;
             _mediator = mediator;
         }
+
+        // Phase Strategies
         public async Task<IActionResult> Index()
         {
             return View(await _mediator.Send(new GetAllPhaseStrategiesQuery()));
         }
 
+        //Phase
         [HttpGet]
         public async Task<IActionResult> EditPhase(int id)
         {
@@ -38,50 +36,111 @@ namespace DigitalAssetManagementRepoArch.WebUI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditPhase(GetPhaseByIdViewModel updatedPhaseViewModel)
+        public async Task<IActionResult> EditPhase(GetPhaseByIdViewModel updatePhaseViewModel)
         {
-            //var v = new UpdatePhaseCommandValidator();
-            //var r = await v.ValidateAsync(updatedPhaseViewModel);
-
-            if (!ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
-                return View(updatedPhaseViewModel);
+                return View(updatePhaseViewModel);
             }
             else
             {
-                await _mediator.Send(new UpdatePhaseCommand() { UpdatedPhaseViewModel = updatedPhaseViewModel });
+                await _mediator.Send(new UpdatePhaseCommand() { UpdatePhaseViewModel = updatePhaseViewModel });
+                return Redirect("Index");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult CreatePhase()
+        {
+            return View("CreatePhase");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreatePhase(CreatePhaseViewModel createPhaseViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(createPhaseViewModel);
+            }
+            else
+            {
+                await _mediator.Send(new CreatePhaseCommand() { CreatePhaseViewModel = createPhaseViewModel });
                 return RedirectToAction("Index");
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeletePhase(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Index");
+            }
+            else
+            {
+                await _mediator.Send(new DeletePhaseCommand() { DeletePhaseId = id });
+                return Json(new { result = "Redirect", url = Url.Action("Index", "PhaseStrategy") });
+            }
+        }
+
+        // Strategy
         [HttpGet]
         public async Task<IActionResult> EditStrategy(int id)
         {
-            return View(await _strategyRepo.GetStrategyById(id));
+            return View(await _mediator.Send( new GetStrategyByIdQuery() {Id = id }));
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditStrategy(GetStrategyByIdViewModel strategyByIdViewModel)
+        public async Task<IActionResult> EditStrategy(GetStrategyByIdViewModel updateStrategyViewModel)
         {
-            await _mediator.Send(new UpdateStrategyCommand() {UpdatedStrategyDto = strategyByIdViewModel.DisplayStrategy});
-            //await _strategyRepo.UpdateStrategy(strategyByIdViewModel, cancellationToken);
-            return RedirectToAction("Index");
+            if (!ModelState.IsValid)
+            {
+                return View(updateStrategyViewModel);
+            }
+            else
+            {
+                await _mediator.Send(new UpdateStrategyCommand() { UpdateStrategyViewModel = updateStrategyViewModel });
+                return RedirectToAction("Index");
+            }
         }
 
         [HttpGet]
-        //public async Task<IActionResult> CreatePhase(CreatePhaseViewModel createPhaseViewModel)
-        //{
-        //    //return View("CreatePhase");
-        //}
-        [HttpPost]
-        public async Task<IActionResult> CreatePhase(CreatePhaseViewModel createPhaseViewModel, CancellationToken cancellationToken)
+        public IActionResult CreateStrategy()
         {
-            await _phaseRepo.CreatePhase(createPhaseViewModel, cancellationToken);
-            return RedirectToAction("Index");
+            return View("CreateStrategy");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateStrategy(CreateStrategyViewModel createStrategyViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(createStrategyViewModel);
+            }
+            else
+            {
+                await _mediator.Send(new CreateStrategyCommand() {CreateStrategyViewModel = createStrategyViewModel});
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteStrategy(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Index");
+            }
+            else
+            {
+                await _mediator.Send(new DeleteStrategyCommand() { DeleteStrategyId= id });
+                return Json(new { result = "Redirect", url = Url.Action("Index", "PhaseStrategy") });
+            }
         }
 
         public ActionResult Cancel()
         {
-            return RedirectToAction("Index");
+            return View("Index");
         }
     }
 }

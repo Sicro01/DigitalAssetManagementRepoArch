@@ -11,6 +11,15 @@ namespace DigitalAssetManagementRepoArch.Infrastructure
         {
         }
 
+        public DbContext Instance
+        {
+            get
+            {
+                var applicationDbContext = this;
+                return applicationDbContext;
+            }
+        }
+
         public DbSet<Phase> Phases { get; set; }
         public DbSet<Strategy> Strategies { get; set; }
         public DbSet<PhaseStrategy> PhaseStrategies { get; set; }

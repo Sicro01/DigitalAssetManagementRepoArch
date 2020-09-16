@@ -18,7 +18,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Configurations
                 .HasOne(ps => ps.Strategy)
                 .WithMany(s => s.PhaseStrategyList)
                 .HasForeignKey(p => p.StrategyId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

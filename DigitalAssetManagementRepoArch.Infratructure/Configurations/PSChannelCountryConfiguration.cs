@@ -16,7 +16,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Configurations
             builder.HasOne(p => p.PSChannel)
                 .WithMany(p => p.PSChannelCountryList)
                 .HasForeignKey(p => p.PSChannelId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

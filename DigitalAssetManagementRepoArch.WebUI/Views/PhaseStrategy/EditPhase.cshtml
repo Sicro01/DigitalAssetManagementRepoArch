@@ -9,17 +9,17 @@
 <div class="">
     <form method="post">
         <div asp-validation-summary="All" class="text-danger"></div>
-        @Html.HiddenFor(m => m.DisplayPhase.Id)
+        @Html.HiddenFor(m => m.DisplayPhaseDto.Id)
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col" class="text-center" style="width: 35%;">
-                        <label asp-for="DisplayPhase.Name"></label>
+                        <label asp-for="DisplayPhaseDto.Name"></label>
                     </th>
                     <th scope="col" class="text-center" style="width: 25%;">
-                        <label asp-for="DisplayPhase.StartDate"></label>
+                        <label asp-for="DisplayPhaseDto.StartDate"></label>
                     <th scope="col" class="text-center" style="width: 25%;">
-                        <label asp-for="DisplayPhase.EndDate"></label>
+                        <label asp-for="DisplayPhaseDto.EndDate"></label>
                     </th>
                     <th scope="col" class="text-center" style="width: 15%;">
                         <label>Manage Phase</label>
@@ -29,20 +29,20 @@
             <tbody>
                 <tr>
                     <td>
-                        <input asp-for="DisplayPhase.Name" class="form-control" />
-                        <span asp-validation-for="DisplayPhase.Name" class="text-danger"></span>
+                        <input asp-for="DisplayPhaseDto.Name" class="form-control" />
+                        <span asp-validation-for="DisplayPhaseDto.Name" class="text-danger"></span>
                     </td>
                     <td>
-                        <input asp-for="DisplayPhase.StartDate" class="form-control" />
-                        <span asp-validation-for="DisplayPhase.StartDate" class="text-danger"></span>
+                        <input asp-for="DisplayPhaseDto.StartDate" class="form-control" />
+                        <span asp-validation-for="DisplayPhaseDto.StartDate" class="text-danger"></span>
                     </td>
                     <td>
-                        <input asp-for="DisplayPhase.EndDate" class="form-control" />
-                        <span asp-validation-for="DisplayPhase.EndDate" class="text-danger"></span>
+                        <input asp-for="DisplayPhaseDto.EndDate" class="form-control" />
+                        <span asp-validation-for="DisplayPhaseDto.EndDate" class="text-danger"></span>
                     </td>
                     <td class="d-flex justify-content-around">
                         <button type="submit" class="btn btn-success">Save</button>
-                        <a asp-action="Cancel" type="submit" class="btn btn-primary">Cancel</a>
+                        <a asp-action="Cancel" type="submit" class="btn btn-secondary">Cancel</a>
 
                     </td>
                 </tr>

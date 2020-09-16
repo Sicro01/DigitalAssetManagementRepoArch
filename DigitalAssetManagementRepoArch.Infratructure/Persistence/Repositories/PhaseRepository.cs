@@ -1,15 +1,14 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using DigitalAssetManagementRepoArch.Application.Common.Interfaces;
-using DigitalAssetManagementRepoArch.Application.Phases.Commands.CreatePhase;
 using DigitalAssetManagementRepoArch.Application.Phases.Dtos;
 using DigitalAssetManagementRepoArch.Application.Phases.Queries.GetAllPhases;
 using DigitalAssetManagementRepoArch.Application.Phases.Queries.GetPhase;
 using DigitalAssetManagementRepoArch.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using MediatR;
 
 namespace DigitalAssetManagementRepoArch.Infrastructure.Persistence.Repositories
 {
@@ -28,37 +27,41 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Persistence.Repositories
         {
             return new GetAllPhasesViewModel
             {
-                AllPhaseDtoList = await _context.Phases.ProjectTo<PhaseDto>(_mapper.ConfigurationProvider).ToListAsync()
+                DisplayAllPhaseDtoList = await _context.Phases.ProjectTo<PhaseDto>(_mapper.ConfigurationProvider)
+                    .ToListAsync()
             };
         }
+
         public  async Task<GetPhaseByIdViewModel> GetPhaseByIdRepoQuery(int id)
         {
             return new GetPhaseByIdViewModel
             {
-                DisplayPhase = await _context.Phases.ProjectTo<PhaseDto>(_mapper.ConfigurationProvider).FirstOrDefaultAsync(i => i.Id == id)
+                DisplayPhaseDto = await _context.Phases.ProjectTo<PhaseDto>(_mapper.ConfigurationProvider).FirstOrDefaultAsync(i => i.Id == id)
             };
         }
 
-        public async Task<int> UpdatePhase(Phase updatedPhase, CancellationToken cancellationToken)
+        public async Task<Unit> UpdatePhaseRepo(Phase updatedPhase, CancellationToken cancellationToken)
         {
             _context.Phases.Update(updatedPhase);
             await _context.SaveChangesAsync(cancellationToken);
-            return updatedPhase.Id;
+            return Unit.Value;
         }
 
-        public async Task<int> CreatePhase(CreatePhaseViewModel createPhaseViewModel, CancellationToken cancellationToken)
+        public async Task<Unit> CreatePhaseRepo(Phase newPhase, CancellationToken cancellationToken)
         {
-            var phase = new Phase
-            {
-                Name = createPhaseViewModel.NewPhase.Name,
-                StartDate = createPhaseViewModel.NewPhase.StartDate,
-                EndDate = createPhaseViewModel.NewPhase.EndDate
-            };
-
-            await _context.Phases.AddAsync(phase, cancellationToken);
+            await _context.Phases.AddAsync(newPhase, cancellationToken);
             await _context.SaveChangesAsync(cancellationToken);
+            return Unit.Value;
+        }
 
-            return phase.Id;
+        public async Task<Unit> DeletePhaseRepo(Phase deletePhase, CancellationToken cancellationToken)
+        {
+            var p =  await _context.Phases.FindAsync(deletePhase.Id);
+            _context.Phases.Remove(p);
+            //_context.Instance.Entry(deletePhase).State = EntityState.Deleted; 
+            await _context.SaveChangesAsync(cancellationToken);
+            
+            return Unit.Value;
         }
     }
 }

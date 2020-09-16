@@ -7,6 +7,6 @@ namespace DigitalAssetManagementRepoArch.Application.Phases.Commands.CreatePhase
 {
     public class CreatePhaseViewModel
     {
-        public PhaseDto NewPhase { get; set; }
+        public PhaseDto CreatePhaseDto { get; set; }
     }
 }

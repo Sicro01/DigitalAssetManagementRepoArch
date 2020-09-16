@@ -431,3 +431,5 @@ C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAsset
 C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.WebUI\obj\Debug\netcoreapp3.1\DigitalAssetManagementRepoArch.WebUI.csproj.CoreCompileInputs.cache
 C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.WebUI\obj\Debug\netcoreapp3.1\DigitalAssetManagementRepoArch.WebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.WebUI\obj\Debug\netcoreapp3.1\DigitalAssetManagementRepoArch.WebUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\PhaseStrategy\CreatePhase.cshtml.g.cs
+C:\Users\simon\Documents\c#_projects\DigitalAssetManagementRepoArch\DigitalAssetManagementRepoArch.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\PhaseStrategy\CreateStrategy.cshtml.g.cs

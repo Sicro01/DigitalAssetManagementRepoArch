@@ -18,7 +18,7 @@ namespace DigitalAssetManagementRepoArch.Infrastructure.Configurations
                 .HasOne(p => p.Channel)
                 .WithMany(p => p.PSChannels)
                 .HasForeignKey(p => p.ChannelId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

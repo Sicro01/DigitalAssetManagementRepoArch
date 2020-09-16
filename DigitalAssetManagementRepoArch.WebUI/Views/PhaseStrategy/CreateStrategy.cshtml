@@ -1,0 +1,54 @@
+﻿@model DigitalAssetManagementRepoArch.Application.Strategies.Commands.CreateStrategy.CreateStrategyViewModel
+
+<div class="row">
+    <div class="col-11">
+        <h2 class="text-dark">Create Strategy</h2>
+    </div>
+</div>
+<br />
+<div class="">
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="text-center" style="width: 35%;">
+                        <label asp-for="CreateStrategyDto.Name"></label>
+                    </th>
+                    <th scope="col" class="text-center" style="width: 25%;">
+                        <label asp-for="CreateStrategyDto.StartDate"></label>
+                    <th scope="col" class="text-center" style="width: 25%;">
+                        <label asp-for="CreateStrategyDto.EndDate"></label>
+                    </th>
+                    <th scope="col" class="text-center" style="width: 15%;">
+                        <label>Manage Strategy</label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input asp-for="CreateStrategyDto.Name" class="form-control" />
+                        <span asp-validation-for="CreateStrategyDto.Name" class="text-danger"></span>
+                    </td>
+                    <td>
+                        <input asp-for="CreateStrategyDto.StartDate" class="form-control" />
+                        <span asp-validation-for="CreateStrategyDto.StartDate" class="text-danger"></span>
+                    </td>
+                    <td>
+                        <input asp-for="CreateStrategyDto.EndDate" class="form-control" />
+                        <span asp-validation-for="CreateStrategyDto.EndDate" class="text-danger"></span>
+                    </td>
+                    <td class="d-flex justify-content-around">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <a asp-action="Cancel" type="submit" class="btn btn-primary">Cancel</a>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

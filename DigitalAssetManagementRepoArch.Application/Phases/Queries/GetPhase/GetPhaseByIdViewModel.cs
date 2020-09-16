@@ -6,6 +6,6 @@ namespace DigitalAssetManagementRepoArch.Application.Phases.Queries.GetPhase
 {
     public class GetPhaseByIdViewModel
     {
-        public PhaseDto DisplayPhase { get; set; }
+        public PhaseDto DisplayPhaseDto { get; set; }
     }
 }

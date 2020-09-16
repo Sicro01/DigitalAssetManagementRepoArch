@@ -7,6 +7,6 @@ namespace DigitalAssetManagementRepoArch.Application.Phases.Queries.GetAllPhases
 {
     public class GetAllPhasesViewModel
     {
-        public IList<PhaseDto> AllPhaseDtoList { get; set; }
+        public IList<PhaseDto> DisplayAllPhaseDtoList { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DigitalAssetManagementRepoArch.Application.Common.Interfaces
 {
-    public interface IApplicationDbContext
+    public interface IApplicationDbContext : IDbContext
     {
         public DbSet<Phase> Phases { get; set; }
         public DbSet<Strategy> Strategies { get; set; }

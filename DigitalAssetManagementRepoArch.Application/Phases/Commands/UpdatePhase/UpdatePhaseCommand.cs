@@ -9,7 +9,7 @@ namespace DigitalAssetManagementRepoArch.Application.Phases.Commands.UpdatePhase
 {
     public class UpdatePhaseCommand : IRequest
     {
-        public GetPhaseByIdViewModel UpdatedPhaseViewModel;
+        public GetPhaseByIdViewModel UpdatePhaseViewModel;
 
         public UpdatePhaseCommand()
         {
@@ -27,16 +27,15 @@ namespace DigitalAssetManagementRepoArch.Application.Phases.Commands.UpdatePhase
 
             public async Task<Unit> Handle(UpdatePhaseCommand request, CancellationToken cancellationToken)
             {
-                var originalEntity = await _context.Phases.FindAsync(request.UpdatedPhaseViewModel.DisplayPhase.Id);
+                var originalEntity = await _context.Phases.FindAsync(request.UpdatePhaseViewModel.DisplayPhaseDto.Id);
 
-                originalEntity.Name = request.UpdatedPhaseViewModel.DisplayPhase.Name;
-                originalEntity.StartDate = request.UpdatedPhaseViewModel.DisplayPhase.StartDate;
-                originalEntity.EndDate = request.UpdatedPhaseViewModel.DisplayPhase.EndDate;
+                originalEntity.Name = request.UpdatePhaseViewModel.DisplayPhaseDto.Name;
+                originalEntity.StartDate = request.UpdatePhaseViewModel.DisplayPhaseDto.StartDate;
+                originalEntity.EndDate = request.UpdatePhaseViewModel.DisplayPhaseDto.EndDate;
 
-                await _phaseRepository.UpdatePhase(originalEntity, cancellationToken);
+                await _phaseRepository.UpdatePhaseRepo(originalEntity, cancellationToken);
 
                 return Unit.Value;
-                //return request.UpdatedPhaseDto.Id;
             }
         }
 
